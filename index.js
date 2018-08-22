@@ -20,7 +20,7 @@ input.addEventListener("keydown", e => {
 });
 
 function bubble (event) {
-  e.stopPropagation();
+  event.stopPropagation();
   console.log(this.firstChild.nodeValue.trim() + ' bubbled');
 }
 
