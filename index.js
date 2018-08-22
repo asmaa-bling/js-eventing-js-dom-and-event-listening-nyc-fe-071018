@@ -2,7 +2,7 @@
 const main = document.querySelector("#main");
 const paragraph = document.querySelector("p");
 const input = document.querySelector("input");
-let divs = document.querySelectorAll('div');
+const divs = document.querySelectorAll('div');
 
 main.addEventListener('click', (event) => {
   alert("Hey, you clicked me!");
@@ -20,6 +20,7 @@ input.addEventListener("keydown", e => {
 });
 
 function bubble (event) {
+  e.stopPropagation();
   console.log(this.firstChild.nodeValue.trim() + ' bubbled');
 }
 
