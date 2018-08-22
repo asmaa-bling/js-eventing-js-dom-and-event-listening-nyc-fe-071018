@@ -21,9 +21,13 @@ input.addEventListener("keydown", e => {
 
 function bubble (event) {
   console.log(this.firstChild.nodeValue.trim() + ' bubbled');
-};
-
-for (const aDiv of divs) {
-  aDiv.addEventListener ('click', bubble);
 }
+
+function capture (event) {
+  console.log(this.firstChild.nodeValue.trim() + ' captured');
+}
+
+// for (const aDiv of divs) {
+//   aDiv.addEventListener ('click', bubble);
+// }
 
