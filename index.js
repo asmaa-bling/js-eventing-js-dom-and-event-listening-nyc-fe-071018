@@ -24,9 +24,9 @@ function bubble (event) {
   console.log(this.firstChild.nodeValue.trim() + ' bubbled');
 }
 
-function capture (event) {
-  console.log(this.firstChild.nodeValue.trim() + ' captured');
-}
+// function capture (event) {
+//   console.log(this.firstChild.nodeValue.trim() + ' captured');
+// }
 
 for (const aDiv of divs) {
   aDiv.addEventListener ('click', bubble);
