@@ -12,6 +12,9 @@ paragraph.addEventListener('click', (event) => {
   alert("Hey, you clicked the p tag");
 });
 
-input.addEventListener("click", e => {
-  console.log(e);
-})
+input.addEventListener("keydown", e => {
+  if (e.which === 71) {
+    e.preventDefault();
+  }
+});
+
