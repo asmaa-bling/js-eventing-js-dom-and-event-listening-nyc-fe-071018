@@ -2,6 +2,7 @@
 const main = document.querySelector("#main");
 const paragraph = document.querySelector("p");
 const input = document.querySelector("input");
+let divs = document.querySelectorAll('div');
 
 main.addEventListener('click', (event) => {
   alert("Hey, you clicked me!");
@@ -17,4 +18,12 @@ input.addEventListener("keydown", e => {
     e.preventDefault();
   }
 });
+
+function bubble (event) {
+  console.log(this.firstChild.nodeValue.trim() + ' bubbled');
+};
+
+for (const aDiv of divs) {
+  aDiv.addEventListener ('click', bubble);
+}
 
