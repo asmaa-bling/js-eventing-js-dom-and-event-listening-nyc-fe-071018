@@ -31,3 +31,7 @@ function capture (event) {
 //   aDiv.addEventListener ('click', bubble);
 // }
 
+for (const aDiv of divs) {
+  aDiv.addEventListener ('click', capture, true);
+}
+
