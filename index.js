@@ -13,5 +13,5 @@ paragraph.addEventListener('click', (event) => {
 });
 
 input.addEventListener("keydown", e => {
-  console.log("e.which");
+  console.log(e.which);
 })
