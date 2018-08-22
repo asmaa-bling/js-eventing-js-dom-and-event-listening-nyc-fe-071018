@@ -12,6 +12,6 @@ paragraph.addEventListener('click', (event) => {
   alert("Hey, you clicked the p tag");
 });
 
-input.addEventListener("keydown", e => {
+input.addEventListener("click", e => {
   console.log(e);
 })
